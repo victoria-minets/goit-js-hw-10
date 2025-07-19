@@ -17,6 +17,28 @@
       <h1 class="main-title">
         Snackbar
       </h1>
+
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" min="0" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit" class="start-btn">Create notification</button>
+      </form>
+
     </div>
   </main>
 
